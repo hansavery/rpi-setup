@@ -3,7 +3,7 @@ Setup scripts for the Raspberry Pi, because memorizing settings is hard. Tested 
 
 The example script, basic\_headless\_setup.sh, will take a device name (for example, 'sda', 'sdb', or 'sdc') and the path to a disk image as arguments. For example:
 
-`basic_headless_setup.sh sdb ./diskimages/2018-11-13-raspbian-stretch-lite.zip`
+`sudo ./basic_headless_setup.sh sdb ./diskimages/2018-11-13-raspbian-stretch-lite.zip`
 
 By default, the basic headless setup sets the keyboard layout, configures wifi, updates the host name, and copies ssh keys. It also creates a script to run on the Pi's first boot which enables ssh, sets the timezone, downloads system updates, and installs the programs needed to create a wifi access point. Wifi configuration, location info, and other secrets are taken from the secrets.sh file. Setup steps have been coded in functions so that they can be easily added to/removed from the script.
 
